@@ -42,6 +42,12 @@ body{
     background-color: var(--light-grey-blue);
 }
 
+/* main{
+    height: 80vh;
+    align-content: center;
+    margin: 0 var(--space-xl);
+} */
+
 .articleCard{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -51,8 +57,9 @@ body{
 }
 
 .articleImage{
-    display: block; /* Removes space below img */
-    max-inline-size: 100%; /* Adapts to 100% of parent's spaceavailable*/
+    display: block;  /*Removes space below img */
+    max-inline-size: 100%; /*Adapts to 100% of parent's spaceavailable*/
+    border-radius: 10px 0 0 10px; /*top-left / top-right / bottom-right / bottom-left*/
 }
 
 .articleInfo{
@@ -60,7 +67,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: var(--space-s);
-    margin: 0 var(--space-xl); /* top-bottom / left-right */
+    margin: 0 var(--space-xl); /*top-bottom / left-right*/ 
     font-family: var(--font-family);
     font-size: var(--step-0);
     color: var(--dark-grey-blue);
@@ -103,13 +110,19 @@ h2, .date{
 a{
     background-color: var(--light-grey-blue);
     color: var(--dark-blue);
-    padding: 10px;
+    padding: 8px;
     border-radius: 50%;
-    font-size: var(--step-0);
+    font-size: var(--step-1);
 }
 
+/* a:hover{
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: white;
+} */
 
-@media(max-width: 795px) {
+
+/* @media(max-width: 800px) {
 
     body{
         display: flex;
@@ -127,6 +140,10 @@ a{
         flex-direction: column;
         justify-content: center;
         gap: var(--space-s);
-        margin: var(--space-l);
+        margin: var(--space-l) var(--space-xl);
     }
-}
+
+    .articleImage{
+        border-radius: 10px 10px 0 0;
+    }
+} */

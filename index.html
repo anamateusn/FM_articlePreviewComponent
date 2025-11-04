@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <!--Browser Icon-->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!--Font Family-->
-  <!--Font Family (correct Google Fonts stylesheet) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap">
-  <!--Font Awesome Icon (CDN - simplified for development) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!--CSS-->
-  <link rel="stylesheet" href="css/style.css">
-  <!--JS-->
-  <script src="js/script.js" defer></script>
+    <!--Browser Icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Font Family-->
+    <!--Font Family (correct Google Fonts stylesheet) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+    />
+    <!--Font Awesome Icon (CDN - simplified for development) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--JS-->
+    <script src="js/script.js" defer></script>
 
-  <title>Article preview component</title>
+    <title>Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <article class="articleCard">
+          <img
+            class="articleImage"
+            src="images/drawers.jpg"
+            alt="Article Image"
+          />
 
-</head>
-<body>
+        <section class="articleInfo">
+          <h1 class="title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
 
-  <article class="articleCard">
+          <section class="articleDetails">
+            <div class="authorInfo">
+              <div class="authorImg">
+                <img src="images/avatar-michelle.jpg" alt="Author Image" />
+              </div>
 
-    <figure>
-      <img class="articleImage" src="images/drawers.jpg" alt="Article Image">
-    </figure>
+              <div class="details">
+                <h2 class="name">Michelle Appleton</h2>
+                <p class="date">28 Jun 2020</p>
+              </div>
+            </div>
 
-    <section class="articleInfo">
-
-      <h1 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-      <p class="description"> Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      
-      <section class="articleDetails">
-
-        <div class="authorInfo">
-
-          <div class="authorImg">
-            <img src="images/avatar-michelle.jpg" alt="Author Image">
-          </div>
-
-          <div class="details">
-            <h2 class="name">Michelle Appleton</h2>
-            <p class="date">28 Jun 2020</p>
-          </div>
-
-        </div>
-
-        <div class="divBtn">
-          <a href=""><i class="fas fa-share"></i></a>
-        </div>
-
-      </section>
-
-    </section>
-  
-  </article>
-
-  
-</body>
+            <div class="divBtn">
+              <a class="btn" href=""><i class="fas fa-share"></i></a>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
