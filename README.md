@@ -1,4 +1,4 @@
-# ------------ Work in Progress - Not completed yet ------------
+# Work in Progress - Not completed yet
 
 ## The challenge
 
